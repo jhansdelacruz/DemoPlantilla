@@ -1,0 +1,19 @@
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+
+template:
+  description: Infraestructura para desplegar una Web estatica en s3
+  config:
+    aws:region:
+      description: Region de AWS donde se implenta
+      default: us-east-1
+    env:
+      description: El entorno de trabajo
+      default: development
+    bucketWeb:
+      description: Nombre de la web statica
+      default: web-innovate-pe
